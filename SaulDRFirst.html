@@ -1,0 +1,74 @@
+<!--Saul Diego-Ramirez-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="helper.js"></script>
+    <title>UAT Space Program</title><!--This is the the title of my page.-->
+</head>
+<body style="background-color:rgb(137, 203, 233)"><!--The background needed some style. So I colored the background.-->
+    <a href="index.html">Home</a> &nbsp; &nbsp; <a href="SaulDRFirst.html">UAT Space Program</a> <!--In order to maintain a link to both the homepage and the main page I use this line to jump between them.-->
+    <div>&nbsp;</div>
+    <img src="UATspaceLogo-2.jpg"></img><!--This is a picture I inserted of the UAT Space Program.-->
+    <audio controls>
+    <source src="us-lab-background.mp3" type="audio/mpeg"></source> <!--This provides the sound clip used in the page.-->
+    Your browser does not support the audio element
+    </audio>
+    <h1>
+        UAT Space Program<!--This is the header which comes out as big and bold on the webpage.-->
+    </h1>
+    <p style = color:crimson><!--This adds some colot to the text.-->
+        Test of the paragraph tags<!--And this is the text that will only be colored.-->
+    </p>
+    <p>
+      Countdown: <span id="DisplayCountdown"> </span>
+        <script>
+        myAlert()
+         countdownCode(document.getElementById("DisplayCountdown"));
+        </script>
+     
+    </p>
+<div>&nbsp;</div>
+    <table style = "border: 1px solid black; padding: 0px; border-spacing: 0px; background-color: white;"> <!--This line provides most of the styling to table and allows it to stand out on the page.-->
+        <tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Data Type</td> <!--Most of these line are the same but they all are used to style the table and text in the way they are presented.-->
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Reading</td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Latitude</td>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">45</td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Longitude</td>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">86</td>
+         </tr>
+        <tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Speed</td>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">600mph</td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Acceleration</td>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">15mph</td>
+        </tr>
+        <tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">Altitude</td>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">342ft.</td>
+        </tr>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">G-Force</td>
+        <td style="font-weight: bold; border: 1px solid black; padding: 10px;">4.2</td>
+        </tr>
+    </table>
+<div>&nbsp;</div>
+    <button id="startbutton" onclick="StartFunc()"><!--This button has been designated as the start button and has been given a function to enact on click.-->
+        Start! <!--This is what will be displayed inside the button-->
+    </button>
+     <button id="stopbutton" onclick="stopFunc()"><!--This serves the same purpose as the start button but will provide function to the stop function-->
+            Stop!
+        </button>
+        <p id="demo"></p><!--This is what will be displayed once the buttons are clicked. It also helps in eliminating more code.-->
+
+</body>
+<!--This concludes the webpage.-->
+</html>
